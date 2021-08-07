@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+#root,html,body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.app{
+    height: 100%;
+    background: url('./images/city.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card{
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.39);
+    background-color: rgba(43, 41, 41, 0.582);
+    width: 40%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+.button{
+    background-color: rgba(0, 0, 0, 0.685);
+    color :white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.562);
+    color :white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+}
+.button:active{
+    background-color: rgba(41, 1, 1, 0.562);
+    color :white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
